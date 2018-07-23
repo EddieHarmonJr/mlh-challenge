@@ -1,0 +1,202 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+html {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 30%;
+  background-color: rgba(228, 13, 13, 0.733);
+}
+
+nav {
+  display: flex;
+  align-items: baseline;
+  /* background-color: rgba(228, 13, 13, 0.733); */
+  color: white;
+  margin-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a {
+  color: white;
+}
+
+.links {
+  margin-left:  auto;
+}
+
+.links a {
+  padding-left: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.briefcase {
+  color: white;
+  padding-left: 10px;
+}
+
+nav p {
+  padding-left: 10px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.photo {
+  margin-right: 10px;
+}
+
+.roundedCorners {
+  border-radius: 5px;
+}
+
+.skills {
+  display: flex;
+  list-style-type: none;
+  /* text-align: center; */
+  padding-left: 0;
+  /* justify-content: space-between; */
+  /* align-content: flex-start; */
+  /* justify-content: space-evenly; */
+}
+
+.skills li {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  /* margin: 10px; */
+  padding: 7px;
+  /* margin-left: 15px; */
+  margin-right: 50px;
+}
+
+.aboutMeSection {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-left: 25px;
+  padding: 40px;
+  padding-right: 75px;
+  line-height: 200%;
+  background-color: white;
+}
+
+.aboutMeHeader {
+  color: rgba(228, 13, 13, 0.733);
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer {
+  background-color: white;
+} 
+
+/* Add some responsiveness for those on mobile devices */
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo {
+    margin: 0 auto;
+  }
+
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container {
+    width: 600px;
+  }
+
+  body {
+    width: 601px;
+    margin: 0;
+  }
+
+  nav {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .aboutMeSection {
+    text-align: center;
+    padding: 10px;
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  .skills {
+    margin-left: 0px;
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 400px) {
+
+  .container {
+    width: 400px;
+  }
+
+  body {
+    width: 401px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+
+    /* justify-content: center; */
+  }
+ 
+  nav p {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  nav i {
+    margin: 0 auto;
+    padding-left: 15px;
+  }
+ /* stack the links on top of each other */
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* stack the skills on top of each other */
+  .skills {
+    flex-direction: column;
+    margin-left: 0px;
+    padding: 0;  
+  }
+
+  .skills li {
+    margin-right: 0;
+  }
+} 
+
